@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // there are two important class.
+    // please look at Person class and SecondViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
