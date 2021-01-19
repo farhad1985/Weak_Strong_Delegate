@@ -22,10 +22,10 @@ class Person {
     }
     
     func foo() {
-        delegate?.hello()
+        delegate?.heavyWork()
     }
 }
 
 protocol Personable: class {
-    func hello()
+    func heavyWork()
 }

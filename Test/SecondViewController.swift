@@ -34,7 +34,7 @@ class SecondViewController: UIViewController {
 }
 
 extension SecondViewController: Personable {
-    func hello() {
+    func heavyWork() {
         DispatchQueue.global(qos: .background).async { [weak self] in
             for i in 0...100000 {
                 guard let _ = self else {
