@@ -14,6 +14,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("viewDidLoad")
+
         person?.delegate = self
 
     }
@@ -21,7 +23,6 @@ class SecondViewController: UIViewController {
 
     @IBAction
     func dismiss() {
-        print("viewDidLoad")
         person?.foo()
         navigationController?.popViewController(animated: true)
     }
