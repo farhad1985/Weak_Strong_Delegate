@@ -38,8 +38,11 @@ extension SecondViewController: Personable {
         DispatchQueue.global(qos: .background).async { [weak self] in
             for i in 0...100000 {
                 guard let _ = self else {
+                    // it means SecondViewController is not in memory
                     return
                 }
+                
+                // it means SecondViewController is in memory
                 print("\(i)")
             }
         }
